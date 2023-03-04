@@ -1,6 +1,6 @@
 FROM shoothzj/compile:jdk17-mvn AS compiler
 
-RUN git clone --depth 1 --branch introduce-h2-postgre-properties https://github.com/shoothzj/apollo.git && \
+RUN git clone --depth 1 --branch introduce-h2-postrgre-properties https://github.com/shoothzj/apollo.git && \
     cd apollo && \
     mvn -B clean package -DskipTests=true && \
     mkdir /opt/apollo
